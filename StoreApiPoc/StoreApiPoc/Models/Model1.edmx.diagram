@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f50d29c62a2443d4a29f875cf35a6adf" Name="Diagram1">
+        <EntityTypeShape EntityType="StoreDBModel1.sysdiagram" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel1.tblCustomer" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel1.tblProduct" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel1.tblCart" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel1.tblLogin" Width="1.5" PointX="2.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel1.tblOrder" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="StoreDBModel1.FK_tblCustomer_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel1.FK_tblCustomer_ID_tblOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel1.FK_tblProducts_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel1.FK_tblProducts_ID_tblOrder" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

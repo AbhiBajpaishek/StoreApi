@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/CSS/LoginHomeCSS.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+    <main>
+        <div class="main-content">
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+
+                <button type="submit" class="btn btn-danger signup">New User? Sign up</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

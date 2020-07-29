@@ -1,0 +1,6 @@
+namespace ElectronicStoreWebApi.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}

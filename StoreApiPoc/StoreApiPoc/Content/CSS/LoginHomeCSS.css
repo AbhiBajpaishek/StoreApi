@@ -1,0 +1,50 @@
+﻿*{
+    box-sizing:border-box;
+}
+html{
+    height:100%;
+}
+
+body{
+    padding:0 0;
+    height:100%;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    background-image: url('../Images/berlin-1304370_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+}
+
+main{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+
+.main-content{
+    border:2px solid white;
+    width:50rem;
+    height:40rem;
+    background-color:white;
+    opacity:0.6;
+}
+
+.login-form {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.signup{
+    margin-top:1rem;
+}

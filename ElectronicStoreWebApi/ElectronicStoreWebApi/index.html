@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<script src="Scripts/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+
+        $(function () {
+
+            $("#btnAdd").click(function () {
+
+                alert('hi');
+
+                $.ajax({
+
+                    type: "GET",
+
+                    url: 'http://localhost:57529/api/products/GetById?id=2',
+
+                    success: function (data, status, xhr) {
+
+                        alert("The result is : " + data[0]);
+                        console.log(data);
+
+                    },
+
+                    error: function (xhr) {
+
+                        alert(xhr.responseText);
+
+                    }
+
+                });
+
+            });
+
+        });
+
+</script>
+</head>
+<body>
+    <input id="btnAdd" type="button" value="Add" />
+</body>
+</html>

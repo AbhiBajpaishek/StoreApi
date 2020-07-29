@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicStoreWebApi", "ElectronicStoreWebApi\ElectronicStoreWebApi.csproj", "{BD02817B-31A3-4E4D-8E4E-260A404DE5E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{3DE24A51-0351-4128-A7E3-3AAD0BDCADC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD02817B-31A3-4E4D-8E4E-260A404DE5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD02817B-31A3-4E4D-8E4E-260A404DE5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD02817B-31A3-4E4D-8E4E-260A404DE5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD02817B-31A3-4E4D-8E4E-260A404DE5E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE24A51-0351-4128-A7E3-3AAD0BDCADC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE24A51-0351-4128-A7E3-3AAD0BDCADC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE24A51-0351-4128-A7E3-3AAD0BDCADC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE24A51-0351-4128-A7E3-3AAD0BDCADC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AEFBC17-8AD8-4CB8-819D-E78150EE09F9}
+	EndGlobalSection
+EndGlobal
