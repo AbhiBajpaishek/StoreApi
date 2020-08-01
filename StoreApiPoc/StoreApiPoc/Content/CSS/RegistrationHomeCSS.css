@@ -1,1 +1,15 @@
-﻿
+﻿main::before {
+    height: 50rem;
+}
+
+/*.login-form*/
+.form-group
+{
+    display:grid;
+    grid-template-columns:20rem auto;
+    grid-column-gap:1rem;
+}
+
+.form-group label{
+    align-self:center;
+}
