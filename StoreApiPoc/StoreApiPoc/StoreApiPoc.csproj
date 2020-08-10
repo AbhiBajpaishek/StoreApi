@@ -134,6 +134,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Helper Class\CustomerVerification.cs" />
+    <Compile Include="Areas\Helper Class\EmailVerification.cs" />
+    <Compile Include="Areas\Helper Class\LoginAreaLogin.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
     <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
@@ -162,14 +165,46 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Areas\LoginArea\Controllers\CustomerController.cs" />
     <Compile Include="Areas\LoginArea\Controllers\HomeController.cs" />
-    <Compile Include="Areas\LoginArea\LoginAreaAreaRegistration.cs" />
+    <Compile Include="Areas\Helper Class\LoginAreaAreaRegistration.cs" />
     <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cart.cs">
+      <DependentUpon>StoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\customer.cs">
+      <DependentUpon>StoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\CustomerRegistrationEntity.cs" />
+    <Compile Include="Models\login.cs">
+      <DependentUpon>StoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\order.cs">
+      <DependentUpon>StoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\product.cs">
+      <DependentUpon>StoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StoreDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StoreDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StoreDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StoreDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -179,7 +214,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\CSS\CustomerLayoutCSS.css" />
     <Content Include="Content\CSS\RegistrationHomeCSS.css" />
+    <Content Include="Content\CSS\VerificationHomeCSS.css" />
     <Content Include="Content\Images\berlin-1304370_1920.jpg" />
     <Content Include="Content\Images\login_bg.png" />
     <Content Include="Content\Images\shopping-street-3784949_1280.jpg" />
@@ -187,6 +224,16 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\StoreDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StoreDBModel.edmx</DependentUpon>
+      <LastGenOutput>StoreDBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\StoreDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>StoreDBModel.edmx</DependentUpon>
+      <LastGenOutput>StoreDBModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -212,6 +259,16 @@
     <Content Include="Areas\LoginArea\Views\Home\Index.cshtml" />
     <Content Include="Content\CSS\LoginHomeCSS.css" />
     <Content Include="Areas\LoginArea\Views\Home\Registration.cshtml" />
+    <EntityDeploy Include="Models\StoreDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>StoreDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\StoreDBModel.edmx.diagram">
+      <DependentUpon>StoreDBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Areas\LoginArea\Views\Home\Verification.cshtml" />
+    <Content Include="Areas\LoginArea\Views\Shared\_CustomerLayout.cshtml" />
+    <Content Include="Areas\LoginArea\Views\Customer\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -235,8 +292,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\LoginArea\Models\" />
-    <Folder Include="Areas\LoginArea\Views\Shared\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

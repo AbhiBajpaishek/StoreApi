@@ -17,30 +17,30 @@
 <body>
     <main>
         <div class="main-content">
-            <form class="login-form" action="~/Areas/LoginArea/Registration" method="post">
+            <form class="login-form" action="~/LoginArea/Home/Registration" method="post">
 
                 <div class="form-group">
                     <label for="fName">First Name:</label>
-                    <input type="text" class="form-control" id="fName" placeholder="Enter First Name">
+                    <input type="text" class="form-control" id="fName" name="fName" placeholder="Enter First Name">
                 </div>
 
                 <div class="form-group">
                     <label for="lName">Last Name:</label>
-                    <input type="text" class="form-control" id="lName" placeholder="Enter Last Name">
+                    <input type="text" class="form-control" id="lName" name="lName" placeholder="Enter Last Name">
                 </div>
 
                 <div class="form-group">
                     <label for="address">Address:</label>
-                    <input type="text" class="form-control" id="address" placeholder="Enter Address">
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address">
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email address:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter Password">
+                    <input type="password" class="form-control" id="pwd" name="password" placeholder="Enter Password">
                 </div>
 
                 <div class="form-group">
@@ -51,7 +51,7 @@
                     <label><input type="checkbox"> Remember me</label>
                 </div>
 
-                <button type="submit" class="btn btn-success" onclick="" >Sign up</button>
+                <button type="submit" class="btn btn-success" >Sign up</button>
 
                 <a href="@Url.Action("Index","Home")" class="btn btn-primary signup">Already registered? Sign in</a>
             </form>

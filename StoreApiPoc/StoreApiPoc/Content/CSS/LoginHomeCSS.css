@@ -24,6 +24,7 @@ body::before {
 main{
     position:relative;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
     height:100%;
@@ -42,6 +43,12 @@ main::before {
 
 .main-content {
     z-index: 50;
+}
+
+
+.signed-up {
+    padding: 10px;
+    border: none;
 }
 
 .login-form {

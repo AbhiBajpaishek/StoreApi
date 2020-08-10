@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Verification</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/CSS/LoginHomeCSS.css" rel="stylesheet" />
+    <link href="~/Content/CSS/VerificationHomeCSS.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+    <main>
+        <div class="main-content">
+            <div class="alert alert-warning" role="alert">
+                Enter OTP sent to your Email to complete your registration
+            </div>
+            <form class="login-form" action="~/LoginArea/Home/Verification" method="post">
+                <div class="form-group">
+                    <label for="email">Your Email address</label>
+                    <input type="email" class="form-control" id="email" readonly="readonly" name="Email" value=@ViewBag.Email>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Enter 4 digit OTP</label>
+                    <input type="password" class="form-control" id="OTP" name="OTP">
+                </div>
+                <button type="submit" class="btn btn-success">Verify</button>
+                @*<a href="@Url.Action("Verification")" class="btn btn-danger signup">Verify</a>*@
+            </form>
+        </div>
+    </main>
+</body>
+</html>

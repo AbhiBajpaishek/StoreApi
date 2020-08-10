@@ -1,0 +1,12 @@
+﻿.alert{
+    margin-bottom:0px;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    width: 50rem;
+    height: 30rem;
+    background-color: AppWorkspace;
+    opacity: 0.2;
+}
